@@ -1,0 +1,91 @@
+<style>
+  * {
+    text-decoration: none;
+    text-decoration-line: none;
+    font-family: sans-serif;
+    color: inherit;
+    position: relative;
+  }
+
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  h1 {
+    margin: auto;
+    margin-top: 64px;
+    font-size: 64px;
+  }
+
+  footer {
+    margin: auto;
+  }
+
+  #app-container {
+    display: grid;
+    grid-template-columns: repeat(3, 96px);
+    grid-template-rows: repeat(3, 96px);
+    border: 1px solid #333;
+    margin: auto;
+  }
+  .square {
+    border: 1px solid #333;
+    padding: 16px 20px;
+    font-size: 64px;
+  }
+
+  .O {
+    color: green;
+    background-color: #f5f4e2;
+  }
+
+  .X {
+    color: purple;
+    background-color: #f7e9f9;
+  }
+
+  .illegal {
+    border: 1px solid red;
+  }
+
+  .green {
+    color: green;
+  }
+
+  .blue {
+    color: blue;
+  }
+
+  .purple {
+    color: purple;
+  }
+</style>
+
+<section>
+  <h1>
+    <span class="green">Tic</span> <span class="blue">Tak</span>
+    <span class="purple">Toe</span>
+  </h1>
+  <article id="app-container">
+    <span class="square" id="1"></span>
+    <span class="square" id="2"></span>
+    <span class="square" id="3"></span>
+    <span class="square" id="4"></span>
+    <span class="square" id="5"></span>
+    <span class="square" id="6"></span>
+    <span class="square" id="7"></span>
+    <span class="square" id="8"></span>
+    <span class="square" id="9"></span>
+  </article>
+  <dialog id="notification"></dialog>
+  <footer>
+    <h4>Un producto de Varela IT Network.</h4>
+    <a href="varelait.com" target="blank">varelait.com</a>
+  </footer>
+</section>
+
+<script src="main.js"></script>

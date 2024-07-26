@@ -1,0 +1,2 @@
+const container = document.querySelector("#app-container");
+const squares = document.querySelectorAll(".squares");
